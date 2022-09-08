@@ -25,7 +25,7 @@ app.use("/user/update", updateUserRoute);
 app.use("/user/delete", deleteUserRoute);
 
 app.all("*", (req, res) => {
-  res.send("No Route found");
+  res.send("Hello from Random API Server. By the way No Route Has Been found");
 });
 
 app.get("/", (req, res) => {
